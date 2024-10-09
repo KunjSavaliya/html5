@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+  
+        // GPT ad slots
+        var interstitialSlot, staticSlot;
+  
+        googletag.cmd.push(function() {
+          // Define a web interstitial ad slot.
+          interstitialSlot = googletag.defineOutOfPageSlot(
+              '/21715635079/html5gameslive.com/intertials',
+              googletag.enums.OutOfPageFormat.INTERSTITIAL);
+  
+          // Slot returns null if the page or device does not support interstitials.
+          if (interstitialSlot) {
+            interstitialSlot.addService(googletag.pubads());
+  
+            document.getElementById('status').innerText = 'Interstitial is loading...';
+  
+            googletag.pubads().addEventListener('slotOnload', function(event) {
+              if (interstitialSlot === event.slot) {
+                document.getElementById('link').style.display = 'block';
+                document.getElementById('status').innerText = 'Interstitial is loaded.';
+              }
+            });
+  
+          }
+  
+          // Define static ad slots.
+          staticSlot = googletag.defineSlot(
+              '/21715635079/html5gameslive.com/intertials', [100, 100], 'static-ad-1')
+            .addService(googletag.pubads());
+  
+          // Enable SRA and services.
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+        });
+      </script>
+      <style>
+        #link {
+          display: none;
+        }
+  
+        div.content {
+          position: fixed;
+          top: 50%;
+        }
+      </style>
+</head>
+ 
+<body >
+    <div id="static-ad-1" style="width: 100px; height: 100px;"></div>
+    <div class="content">
+      <span id="status">Web interstitial is not supported on this page.</span>
+      <p>
+        <a id="link" href="https://www.html5gameslive.com/Dino_Bubbles/index.html">TRIGGER INTERSTITIAL</a>
+        <a id="link" href="https://www.html5gameslive.com/Blocky/index.html">TRIGGER INTERSTITIAL</a>
+        <a id="link" href="https://www.html5gameslive.com/Bounce/index.html">TRIGGER INTERSTITIAL</a>
+        <a id="link" href="https://www.html5gameslive.com/Connection/index.html">TRIGGER INTERSTITIAL</a>
+            </p>
+</body>
+ 
+</html>

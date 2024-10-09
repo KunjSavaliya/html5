@@ -1,0 +1,209 @@
+body {
+  --background: #1f204c;
+  --number-background: #5f61bb;
+  --number-shadow: #434596;
+  --symbol-background: #424392;
+  --symbol-shadow: #313378;
+  --text: #f6f6f6;
+  --text-fade: #ccc;
+  --text-green: #2ecc71;
+  --text-red: #d8334a;
+  --selected-background: #ddd;
+  --selected-shadow: #c8c8c8;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  font-family: "Baloo", cursive;
+  overflow-x: hidden;
+}
+body #hidden {
+  display: none;
+}
+body #game {
+  width: 100vw;
+  min-height: 100vh;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_default.png),
+    auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body #game[cursor][cursor="default"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_default.png),
+    auto;
+}
+body #game[cursor][cursor="1"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_1.png),
+    auto;
+}
+body #game[cursor][cursor="2"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_2.png),
+    auto;
+}
+body #game[cursor][cursor="3"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_3.png),
+    auto;
+}
+body #game[cursor][cursor="4"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_4.png),
+    auto;
+}
+body #game[cursor][cursor="5"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_5.png),
+    auto;
+}
+body #game[cursor][cursor="6"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_6.png),
+    auto;
+}
+body #game[cursor][cursor="7"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_7.png),
+    auto;
+}
+body #game[cursor][cursor="8"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_8.png),
+    auto;
+}
+body #game[cursor][cursor="9"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_9.png),
+    auto;
+}
+body #game[cursor][cursor="0"] {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/cursor_clear.png),
+    auto;
+}
+body #game #board {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(50px);
+  min-width: 600px;
+  min-height: 600px;
+  max-width: 600px;
+  max-height: 600px;
+  margin-top: 10px;
+}
+body #game #board .row {
+  display: flex;
+  flex-direction: row;
+}
+body #game #board .row > div {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+body #game #board .row > div.number,
+body #game #board .row > div.symbol,
+body #game #board .row > div.result {
+  user-select: none;
+  line-height: 80px;
+  text-align: center;
+  font-size: 60px;
+}
+body #game #board .row > div.number,
+body #game #board .row > div.symbol {
+  border-radius: 8px;
+}
+body #game #board .row > div.number {
+  background-color: var(--number-background);
+  box-shadow: 0 8px 0 0 var(--number-shadow);
+  transition: all 0.25s -0.1s;
+}
+body #game #board .row > div.number:active {
+  transform: translateY(8px);
+  box-shadow: 0 0px 0 0 #434596;
+}
+body #game #board .row > div.symbol {
+  background-color: var(--symbol-background);
+  box-shadow: 0 8px 0 0 var(--symbol-shadow);
+}
+body #game #board .row > div.result {
+  position: relative;
+  font-size: 40px;
+}
+body #game #board .row > div.result.correct {
+  color: var(--text-green);
+}
+body #game #board .row > div.result.wrong {
+  color: var(--text-red);
+}
+body #game #keyboard {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+body #game #keyboard .key {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin: 10px;
+  font-size: 52px;
+  border-radius: 8px;
+  text-align: center;
+  user-select: none;
+  background-color: var(--number-background);
+  box-shadow: 0 8px 0 0 var(--number-shadow);
+  transition: all 0.25s -0.1s;
+}
+body #game #keyboard .key.used {
+  background-color: var(--symbol-background);
+  box-shadow: 0 8px 0 0 var(--symbol-shadow);
+}
+body #game #keyboard .key.used:active {
+  transform: translateY(8px);
+  box-shadow: 0 0px 0 0 var(--symbol-shadow);
+}
+body #game #keyboard .key.used.selected {
+  color: var(--symbol-background);
+  background-color: var(--selected-background);
+  box-shadow: 0 16px 0 0 var(--selected-shadow);
+  transform: translateY(-8px);
+}
+body #game #keyboard .key.used.selected:active {
+  transform: translateY(8px);
+  box-shadow: 0 0px 0 0 var(--selected-shadow);
+}
+body #game #keyboard .key:not(.used):active {
+  transform: translateY(8px);
+  box-shadow: 0 0px 0 0 var(--number-shadow);
+}
+body #game #keyboard .key:not(.used).selected {
+  color: var(--number-background);
+  background-color: var(--text);
+  box-shadow: 0 16px 0 0 var(--text-fade);
+  transform: translateY(-8px);
+}
+body #game #keyboard .key:not(.used).selected:active {
+  transform: translateY(8px);
+  box-shadow: 0 0px 0 0 var(--text-fade);
+}
+body #winner {
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  transform: translateY(-50%);
+  background-color: #2aba66;
+  text-align: center;
+}
+body #winner .header {
+  margin: 40px 0;
+  font-size: 60px;
+  margin-bottom: -20px;
+}
+body #winner #new {
+  margin-bottom: 30px;
+}
+body #winner #close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 0 14px;
+  font-size: 32px;
+}
+body #winner:not(.show) {
+  display: none;
+}

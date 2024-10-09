@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML5 Helicopter</title>
+    
+    <style type="text/css">
+       * { margin: 0; padding: 0; }
+       html, body, #helicopter { height: 100%; }
+       body { visibility: hidden; }
+       html.wf-silkscreen-n4-active body { visibility: visible; }
+    </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8757338402468702"
+crossorigin="anonymous"></script>
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script src="../game/ads.js"></script>
+</head>
+
+<body>
+    <div id="div-gpt-ad-1688049706458-0">
+        <script>interstitial(); googletag.cmd.push(function () { googletag.display(staticSlot); }); </script>
+    </div>
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+    <script> window.googletag = window.googletag || { cmd: [] }; var interstitialSlot, staticSlot;
+        googletag.cmd.push(function () { interstitialSlot = googletag.defineOutOfPageSlot('/21715635079,22948036142/html5gameslive.com/intertials', googletag.enums.OutOfPageFormat.INTERSTITIAL); if (interstitialSlot) { interstitialSlot.addService(googletag.pubads()); } staticSlot = googletag.defineSlot('/21715635079,22948036142/html5gameslive.com/intertials', [[1024, 768], [768, 1024], [320, 480], [480, 320]], 'div-gpt-ad-1688049706458-0').addService(googletag.pubads()); googletag.pubads().enableSingleRequest(); googletag.enableServices(); }); </script>
+    <style>
+        #div-gpt-ad-1688049706458-0 {
+            display: none;
+        }
+    </style>
+    <div id="div-gpt-ad-1688049706458-0" style="min-width: 300px; min-height: 90px;align-items:center ;"></div>
+    <script> </script>
+  <span style="font-family:SilkScreenBold;"> </span>
+
+  <div id="helicopter"></div>
+
+  <script src="js/helicopter.js"></script>
+
+  <script>
+
+    var families = ['SilkScreenBold', 'SilkScreen'];
+
+    var INIT = (function (HELICOPTER, families) {
+
+      var numLoaded  = 0;
+      var numFonts   = families.length;
+      var helicopter = document.getElementById('helicopter');
+
+      function loaded() {
+        HELICOPTER.init(helicopter, './');
+      };
+
+      function fontLoaded(family, desc) {
+        if (++numLoaded === numFonts) {
+          loaded();
+        }
+      };
+    
+      return {fontLoaded: fontLoaded};
+
+    })(HELICOPTER, families);
+
+    WebFontConfig = { 
+      custom : { 
+        families : families, 
+        urls     : ['./style/silkscreenbold.css', './style/silkscreen.css']
+      },
+      fontactive : INIT.fontLoaded
+    };
+
+  </script>
+
+  <script src="js/webfont.js"></script>
+
+</body>
+</html>

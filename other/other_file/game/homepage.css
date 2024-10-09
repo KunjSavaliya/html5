@@ -1,0 +1,233 @@
+@media (max-width: 700px) {
+            #iconagesafe {
+                display: none !important;
+            }
+        }
+.main-usage__bg-logo:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #1e2c5d;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 135px solid #15224f;
+                padding: 28px;
+            }
+
+            .main-usage__bg-logo:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 92px solid #0c1945;
+                padding: 28px;
+                z-index: 9999;
+            }
+ .qc-cmp-button.qc-cmp-secondary-button:hover {
+        background-color: #368bd6 !important;
+        border-color: transparent !important;
+    }
+
+    .qc-cmp-button.qc-cmp-secondary-button:hover {
+        color: #ffffff !important;
+    }
+
+    .qc-cmp-button.qc-cmp-secondary-button {
+        color: #368bd6 !important;
+    }
+
+    .qc-cmp-button.qc-cmp-secondary-button {
+        background-color: #eee !important;
+        border-color: transparent !important;
+    }
+footer {
+    padding: 30px 0 0;
+    margin-top: 70px;
+    background: #eaf1ff;
+    position: relative;
+    font-size: 14px;
+    color: #041046;
+}
+footer::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -35px;
+    width: 100%;
+    height: 60px;
+    background: #e9f1ff;
+    border-radius: 360% 360% 0% 0%;
+}
+    .snowflake {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: linear-gradient(white, white);
+        border-radius: 50%;
+        filter: drop-shadow(0 0 10px white);
+    }
+
+    .pinkBg {
+        background-color: #cbe0ff !important;
+        background-color: #cbe0ff !important;
+        background-image: linear-gradient(180deg, #fff, #cbe0ff 50%, #fff);
+    }
+
+    .intro-banner-vdo-play-btn {
+        height: 9px;
+        width: 9px;
+        position: absolute;
+        top: 49%;
+        left: 49px;
+        text-align: center;
+        margin: -4px 0 0 11px;
+        border-radius: 100px !important;
+        z-index: 1;
+    }
+
+    .intro-banner-vdo-play-btn .ripple {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        opacity: 0;
+        margin: -15px 0 0 -15px;
+        border-radius: 100px !important;
+        -webkit-animation: ripple 1.8s infinite;
+        animation: ripple 1.8s infinite;
+    }
+
+    @-webkit-keyframes ripple {
+        0% {
+            opacity: 1;
+            -webkit-transform: scale(0);
+            transform: scale(0)
+        }
+        100% {
+            opacity: 0;
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+
+    @keyframes ripple {
+        0% {
+            opacity: 1;
+            -webkit-transform: scale(0);
+            transform: scale(0)
+        }
+        100% {
+            opacity: 0;
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+
+    .intro-banner-vdo-play-btn .ripple:nth-child(2) {
+        animation-delay: .3s;
+        -webkit-animation-delay: .3s
+    }
+
+    .intro-banner-vdo-play-btn .ripple:nth-child(3) {
+        animation-delay: .6s;
+        -webkit-animation-delay: .6s
+    }
+
+    body {
+        background-color: #05122b !important;
+        background-image: none !important;
+    }
+
+@media (min-width: 1000px) {
+    .game-card__cover {
+        position: relative;
+        z-index: 99;
+        width: 179.667px;
+        height: 134.750px;
+        background: rgba(255, 255, 255, .1);
+        display: block;
+    }
+}
+
+#exclusive {
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-image: url(https://gamemonetize.com/images/bg-dots.png), radial-gradient(388px at 50%, #1172ff, rgba(17, 114, 255, .4) 50%, transparent);
+}
+
+#exclusive .col-lg-4 {
+    flex: 0 0 24.33333%;
+    max-width: 33.33333%;
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+#exclusive .game-card__cover {
+    width: 371.325px;
+    height: 179.663px;
+}
+
+#exclusive .game-card__logo {
+    width: 109px;
+    height: 109px;
+    border-radius: 25px;
+    margin-right: 25px;
+    box-shadow: 0 5px 40px rgba(17, 114, 255, .7);
+    z-index: 99999;
+}
+
+#exclusive .game-card:focus .game-card__logo,
+#exclusive .game-card:hover .game-card__logo {
+    -webkit-transform: translate(-25px, 25px) scale(.95);
+    transform: translate(-25px, 25px) scale(.95);
+}
+
+#exclusive .game-card__logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+}
+
+.main-gamemonetize {
+    margin-bottom: 0px;
+}
+
+#exclusive .game-card__title {
+    width: 190px;
+}
+
+.section__header {
+    margin-bottom: 30px;
+}
+
+#partners {
+    padding-top: 120px;
+}
+
+@media (max-width: 800px) {
+    #exclusive {
+        display: none;
+    }
+}

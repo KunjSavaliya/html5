@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <title>SPACECRAFT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link href="style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="192x192">
+    <link rel="icon" sizes="192x192">
+<link rel="stylesheet" href="https://html5gameslive.com/css/inter.css" >
+<script src="https://html5gameslive.com/js/jquery.min.js"></script>
+<script src="https://html5gameslive.com/js/script.js"></script>
+<script src="https://html5gameslive.com/js/feedback.js"></script>
+<script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if($(window).innerWidth() >= 1200) {
+            $("#interstitialAd").css({"display":"none"});
+            $("#interstial_main").css({"display":"none"});
+        }
+        if($(window).innerWidth() < 1200) {
+            $("#pc_interstitialAd").css({"display":"none"});
+            $("#pcinterstial_main").css({"display":"none"});
+        }
+        $("#closeAdButton1").click(function(){
+            $("#pc_interstitialAd").css({"display":"none"});
+            $("#pcinterstial_main").css({"display":"none"});
+        });
+        $("#closeAdButton").click(function(){
+            $("#interstitialAd").css({"display":"none"});
+            $("#interstial_main").css({"display":"none"});
+        });
+      });
+  </script>
+<!-- pc_inter -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+window.googletag = window.googletag || {cmd: []};
+googletag.cmd.push(function() {
+  googletag.defineSlot('/21952429235,22877914214/Suntech_web/be_sun_html5gameslive_580*300', [580, 300], 'div-gpt-ad-1707123837294-0').addService(googletag.pubads());
+   googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+<!-- mb_inter -->
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+window.googletag = window.googletag || {cmd: []};
+googletag.cmd.push(function() {
+googletag.defineSlot('/21952429235,22877914214/Suntech_web/be_sun_html5gameslive_300x250', [300, 250],'div-gpt-ad-1706768647827-0').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+</head>
+<body>
+    <div id="pc_interstitialAd">
+        <div id="content" >
+         <div id="pctoprow" >
+           <div id="feedbackAdButton1"  >
+             <img src="https://html5gameslive.com/game_logo/feedback2.png " alt="" width="15px" height="15px">
+             </div>
+           <div id="pcad">Ad </div>
+           <div id="closeAdButton1" > &times;</div>
+         </div><div id="pcinterstial_main" style="align-items: center;justify-content:center;">
+            <div id='div-gpt-ad-1707123837294-0' style='min-width: 580px; min-height: 300px;'  >
+              <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1707123837294-0'); });
+              </script>
+            </div></div>
+         </div>
+        </div>
+    <div id="interstitialAd" >
+        <div class="ad-content" id="ad-content">
+          <div class="toprow" id="toprow">
+            <div id="feedbackAdButton" >
+              <img src="https://html5gameslive.com/game_logo/feedback.png " alt="" width="25px" height="25px">
+              </div>
+            <div class="ad" >Ad </div>
+            <div id="closeAdButton"> &times;</div>
+          </div>
+          <!--mb_banner-->
+          <div id="interstial_main" style="align-items: center;justify-content:center;">
+            <div id='div-gpt-ad-1706768647827-0' style='min-width: 300px; min-height: 250px;' >
+          <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1706768647827-0'); });
+          </script>
+            </div></div>
+      </div>
+   </div>
+    <ul id="planet">
+        <li>SPACE</li>
+        <li style="background-image:radial-gradient(circle at 50% 100%, #632, #964 30%, #c96 40%, #000 40%)">PLUTO</li>
+        <li style="background-image:radial-gradient(circle at 50% 100%, #013, #025 48%, #046 58%, #013 59%, #000 61%)">
+            NEPTUNE</li>
+        <li style="background-image:radial-gradient(circle at 50% 100%, #133, #255 50%, #466 60%, #133 61%, #000 63%)">
+            URANUS</li>
+        <li
+            style="background-image:radial-gradient(circle at 50% 100%, #320, #651 50%, #973 60%, #320 61%, #000 63%, #000 73%, #333 75%, #333 88%, #000 90%)">
+            SATURN</li>
+        <li style="background-image:radial-gradient(circle at 50% 100%, #420, #641 60%, #852 70%, #420 71%, #000 75%)">
+            JUPITER</li>
+        <li style="background-image:radial-gradient(circle at 50% 100%, #300, #510 35%, #630 45%, #310 46%, #000 48%)">
+            MARS</li>
+        <li style="background-image:radial-gradient(circle at 50% 100%, #222, #555 30%, #666 40%, #000 40%)">MOON</li>
+    </ul>
+    <canvas id="game" width="192" height="192"></canvas>
+    <div id="hud">
+        <div></div>
+        <div id="quest">
+            <h4 class="title"></h4>
+            <h4></h4>
+            <h4></h4>
+            <table>
+                <tr>
+                    <th>Distance travelled</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Tokens collected</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Big tokens collected</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Asteroids destroyed</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Places visited</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Mission completed</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th class="total">TOTAL</th>
+                    <td class="total"></td>
+                </tr>
+            </table>
+        </div>
+        <div><a id="ok">OK</a></div>
+    </div>
+    <div id="ctrl">
+        <h3></h3>
+        <div>
+            <h3></h3><a id="prev">&lt;</a><a id="play"></a><a id="next">&gt;</a>
+        </div>
+    </div>
+    <div>
+        <i id="fs" title="Fullscreen"></i>
+        <i id="sfx" title="Audio"></i>
+    </div>
+    <div id="load">
+        <div>
+            <h1>SPACECRAFT</h1>
+        </div>
+        <div>
+            <p id="keys">
+                <b>JUMP</b> - <b>UP</b> arrow key<br />
+                <b>SHRINK</b> - <b>DOWN</b> arrow key<br />
+                <b>MOVE</b> - <b>LEFT / RIGHT</b> arrow keys<br />
+                <b>BOOST</b> - <b>SPACE</b> key
+            </p>
+            <p id="touch">
+                <b>JUMP</b> - Swipe <b>UP</b><br />
+                <b>SHRINK</b> - Swipe <b>DOWN</b><br />
+                <b>MOVE</b> - Swipe <b>LEFT / RIGHT</b><br />
+                <b>BOOST</b> - <b>TAP</b>
+            </p>
+            <p>
+                <b class="pink">BIG TOKENS</b> help you collect small ones.<br />
+                Use <b>SHRINK</b> to go through <b class="red">SPACE JUNK</b>.<br />
+                Use <b>BOOST</b> to destroy <b class="cyan">ASTEROIDS</b>.
+            </p>
+        </div>
+        <div><a id="start">START</a></div>
+    </div>
+    <script src="script.js"></script>
+    <style>
+        a#close-fixedban {
+            position: absolute!important;
+            top: 5%!important;
+            background: white!important;
+            color: black!important;
+            z-index: 1!important;
+            right: 3%!important;
+            padding: 10px 40px!important;
+            border-radius: 5px!important;
+            font-family: Montserrat, sans-serif!important;
+            text-decoration: none!important;
+        }
+        </style>
+</body>
+</html>

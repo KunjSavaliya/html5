@@ -1,0 +1,3 @@
+RewriteEngine On
+LsRecaptcha 100
+RewriteRule .* - [E=verifycaptcha:drop]

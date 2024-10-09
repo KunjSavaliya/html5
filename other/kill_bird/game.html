@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Game</title>
+    <!-- <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css"> -->
+    <link rel="stylesheet" href="./css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <section id="welcome">
+        <h1>Welcome
+            <span> </span>
+            to
+            <span> </span>
+            you need to help the cave man get feed by killing 20 birds ! you got 1 min befre he reachs home hurry up.
+        </h1>
+        <button>Lets Start !</button>
+    </section>
+
+    <div class="wrapper">
+        <div>
+
+            <div class="score">
+                <h2>Score : <span class="playerScore">00</span> </h2>
+                <h2> last score : <span id="lastscore">no previous score</span> </h2>
+            </div>
+        </div>
+    </div>
+
+
+    <img src="./images/caveMan.gif" class="caveMan">
+
+    <script src="./js/sweetalert2.min.js"></script>
+    <script src="js/game.js"></script>
+
+    <style>
+        a#close-fixedban {
+            position: absolute !important;
+            top: 5% !important;
+            background: white !important;
+            color: black !important;
+            z-index: 1 !important;
+            right: 3% !important;
+            padding: 10px 40px !important;
+            border-radius: 5px !important;
+            font-family: Montserrat, sans-serif !important;
+            text-decoration: none !important;
+        }
+    </style>
+
+    <div id='fixedban'>
+
+        <a id='close-fixedban' onclick='document.getElementById("fixedban").style.display = "none";'
+            style='cursor:pointer;'>Close</a>
+        <ins class="adsbygoogle adsbygoogle-noablate"
+            style="display: block !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; padding: 0px !important; position: fixed !important;  overflow-y: hidden !important; vertical-align: baseline !important; visibility: visible !important; background: transparent !important;"
+            data-adsbygoogle-status="done" aria-hidden="false" data-slotcar-rewarded="true" data-ad-status="filled"
+            tabindex="0">
+            <iframe id="aswift_2" name="aswift_2" browsingtopics="true"
+                style="inset: 0px auto auto 0px !important; position: absolute !important; border: 0px !important; width: 100vw !important; height: 100vh !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important;  overflow-y: hidden !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;"
+                sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                allow="autoplay; attribution-reporting" width="" height="" frameborder="0" marginwidth="0"
+                marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"
+                src="https:
+
+                data-google-container-id="a!3" data-google-query-id="COzgs6KSmIEDFb2w2AUdf88IGw"
+                data-load-complete="true"></iframe>
+        </ins>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

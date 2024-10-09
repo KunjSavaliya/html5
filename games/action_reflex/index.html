@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Action Reflex</title>
+    <link rel="stylesheet" type="text/css" href="css/ActionReflex.css" />
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/inter.css" >
+    <script src="../js/script.js"></script>
+    <script src="../js/feedback.js"></script>
+    <link rel="stylesheet" href="https://html5gameslive.com/css/inter.css" >
+    <script src="https://html5gameslive.com/js/jquery.min.js"></script>
+    <script src="https://html5gameslive.com/js/script.js"></script>
+    <script src="https://html5gameslive.com/js/feedback.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if($(window).innerWidth() >= 1200) {
+                $("#interstitialAd").css({"display":"none"});
+                $("#interstial_main").css({"display":"none"});
+            }
+            if($(window).innerWidth() < 1200) {
+                $("#pc_interstitialAd").css({"display":"none"});
+                $("#pcinterstial_main").css({"display":"none"});
+            }
+            $("#closeAdButton1").click(function(){
+                $("#pc_interstitialAd").css({"display":"none"});
+                $("#pcinterstial_main").css({"display":"none"});
+            });
+            $("#closeAdButton").click(function(){
+                $("#interstitialAd").css({"display":"none"});
+                $("#interstial_main").css({"display":"none"});
+            });
+        });
+    </script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/21952429235,22877914214/Suntech_web/be_sun_html5gameslive_580*300', [580, 300], 'div-gpt-ad-1707123837294-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+    </script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/21952429235,22877914214/Suntech_web/be_sun_html5gameslive_300x250', [300, 250],'div-gpt-ad-1706768647827-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+    });
+    </script>
+  </head>
+  <body>
+    <div id="pc_interstitialAd">
+      <div id="content" >
+       <div id="pctoprow" >
+         <div id="feedbackAdButton1"  >
+           <img src="https://html5gameslive.com/game_logo/feedback2.png " alt="" width="15px" height="15px">
+           </div>
+         <div id="pcad">Ad </div>
+         <div id="closeAdButton1" > &times;</div>
+       </div><div id="pcinterstial_main" style="align-items: center;justify-content:center;">
+          <div id='div-gpt-ad-1707123837294-0' style='min-width: 580px; min-height: 300px;'  >
+            <script>
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1707123837294-0'); });
+            </script>
+          </div></div>
+       </div>
+      </div>
+  <div id="interstitialAd" >
+      <div class="ad-content" id="ad-content">
+        <div class="toprow" id="toprow">
+          <div id="feedbackAdButton" >
+            <img src="https://html5gameslive.com/game_logo/feedback.png " alt="" width="25px" height="25px">
+            </div>
+          <div class="ad" >Ad </div>
+          <div id="closeAdButton"> &times;</div>
+        </div>
+        <div id="interstial_main" style="align-items: center;justify-content:center;">
+          <div id='div-gpt-ad-1706768647827-0' style='min-width: 300px; min-height: 250px;' >
+        <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1706768647827-0'); });
+        </script>
+          </div></div>
+    </div>
+ </div>
+      <feedback-component></feedback-component>
+    <div id="info">
+      <div id="audio"></div>
+      <div id="fps">
+        <span id="framecounter">(0/0 fps)</span>
+      </div>
+    </div>
+    <div id="app">
+      <script type="text/javascript" src="lib/melonJS-0.9.3.js"></script>
+      <script type="text/javascript" src="lib/jquery-1.7.2.js"></script>
+      <script data-main="runGame" src="lib/require.js"></script>
+    </div>
+  </body>
+</html>

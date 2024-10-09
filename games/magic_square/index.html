@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.55">
+    <title>Magic Square</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="game">
+        <div id="board">
+        </div>
+        <div id="keyboard">
+            <div class="key" key="1">1</div>
+            <div class="key" key="2">2</div>
+            <div class="key" key="3">3</div>
+            <div class="key" key="4">4</div>
+            <div class="key" key="5">5</div>
+            <div class="key" key="6">6</div>
+            <div class="key" key="7">7</div>
+            <div class="key" key="8">8</div>
+            <div class="key" key="9">9</div>
+            <div class="key" key="0">&nbsp;</div>
+        </div>
+        <div id="winner">
+            <div class="header">Congratulations!</div>
+            <div id="new">Play again?</div>
+            <div id="close">×</div>
+        </div>
+    </div>
+    <div id="hidden">
+        <img src="./images" alt="">
+        <img src="./images/cursor_1.png" alt="">
+        <img src="./images/cursor_2.png" alt="">
+        <img src="./images/cursor_3.png" alt="">
+        <img src="./images/cursor_4.png" alt="">
+        <img src="./images/cursor_5.png" alt="">
+        <img src="./images/cursor_6.png" alt="">
+        <img src="./images/cursor_7.png" alt="">
+        <img src="./images/cursor_8.png" alt="">
+        <img src="./images/cursor_9.png" alt="">
+        <img src="./images/cursor_clear.png" alt="">
+    </div>
+    <style>
+        a#close-fixedban {
+            position: absolute!important;
+            top: 5%!important;
+            background: white!important;
+            color: black!important;
+            z-index: 1!important;
+            right: 3%!important;
+            padding: 10px 40px!important;
+            border-radius: 5px!important;
+            font-family: Montserrat, sans-serif!important;
+            text-decoration: none!important;
+        }
+        </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./handler.js"></script>
+</body>
+</html>
