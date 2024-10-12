@@ -28,7 +28,7 @@ class footer extends HTMLElement {
         <div  style="width: 10%;"></div>
         </div>
         <div class="footer_text" style="width: 100%;">
-          Copyright- 2023 <a href="./index.html"  bis_skin_checked="1">101.html5gameslive.com</a> &nbsp;&nbsp;&nbsp;&nbsp;
+          Copyright- 2024 <a href="./index.html"  bis_skin_checked="1">101.html5gameslive.com</a> &nbsp;&nbsp;&nbsp;&nbsp;
           <a href="./privacy_policy.html"  bis_skin_checked="1">Privacy policy</a>  &nbsp;&nbsp;&nbsp;&nbsp; <a href="./terms_of_use.html"  bis_skin_checked="1">Terms & conditions </a>
           </div>
   </footer> `

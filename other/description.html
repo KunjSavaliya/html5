@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML5 Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html5gameslive.com.com is game distribution network with quality HTML5 games. Monetize and distribute HTML5 games. We connect games developers, game publishers and gaming websites.">
+    <meta name="keywords" content="game distribution , distribution games , games distribution , monetize html5 games , distribute games , play games, monetize games , html5 games , online games , friv games , jogos friv , juegos friv , free online games , best games , car games , free games , html5gameslive.com.com, gamesdistribution.com">
+    <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ0791CERF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZZ0791CERF');
+    </script>
+
+<script src="https://html5gameslive.com/js/jquery.min.js"></script>
+<script src="https://html5gameslive.com/js/script.js"></script>
+<script src="https://html5gameslive.com/js/header.js"></script>
+<script src="https://html5gameslive.com/js/footertext.js"></script>
+<script src="https://html5gameslive.com/js/footertext2.js"></script>
+<script src="https://html5gameslive.com/js/feedback.js"></script>
+<script src="https://html5gameslive.com/js/footer.js"></script>
+ <!-- <script src="https://html5gameslive.com/js/games.js"></script> -->
+ <script src="./js/games.js"></script>
+
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8916641928046583"
+  data-adbreak-test="on" data-ad-frequency-hint="120s" data-ad-channel="7561181198"
+ crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="../css/style.css">
+ <!-- <link rel="stylesheet" href="../css/Home.css">   -->
+
+
+</head>
+
+<body>
+  <div id="game-content" class="mainDiv">
+    <div>
+    <h1 id="game-title" class="destext">Loading...</h1>
+    <div class="image-container">
+      <img id="game-image" class="descimgscreen" src="" alt="Game Image">
+      <div class="image-background"></div>
+      <button class="play-button" id="play-button">Play Now</button>
+    </div>
+    <ul id="game-description" class='desc-game'>
+      <!-- Description will be dynamically inserted here -->
+    </ul>
+<div class='desc-game' >
+  <div id="game-keywords" class="keywords-container"></div>
+
+  <games-component></games-component>
+</div>
+
+  </div>
+
+  <!-- Import your data.js file here -->
+  <script type="module">
+    import { gameData } from './data.js';
+
+    // Get the game title from the URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const gameTitle = params.get('game');
+console.log("game",gameTitle);
+
+    // Find the game based on the title
+    const game = gameData.find(item => item?.key?.includes(gameTitle));
+
+    // Function to display the game details on the page
+    function displayGameDetails(game) {
+      const gameTitleElement = document.getElementById('game-title');
+      const gameImageElement = document.getElementById('game-image');
+      const gameDescriptionElement = document.getElementById('game-description');
+      const keywordsContainer = document.getElementById('game-keywords');
+      const playButton = document.getElementById('play-button');
+
+      if (game) {
+        // Set the game details in the UI
+        gameTitleElement.textContent = game.title;
+        gameImageElement.src = game.image;
+        gameImageElement.alt = game.title;
+
+        // Clear previous description content (if any)
+        gameDescriptionElement.innerHTML = '';
+
+
+        // Add each description item to the list
+        game.description.forEach(desc => {
+          const listItem = document.createElement('li');
+          const headingElement = document.createElement('h3'); // Create an h3 element for each description
+          headingElement.textContent = desc; // Set the description text
+          listItem.appendChild(headingElement); // Append h3 to the list item
+          gameDescriptionElement.appendChild(listItem); // Append list item to the description list
+
+        });
+
+        playButton.addEventListener('click', () => {
+          window.location.href = game.link; // Redirect to the game's link
+        });
+        keywordsContainer.innerHTML = '';
+
+// Display each keyword in a separate div
+game.keyWord.forEach(keyword => {
+  const keywordDiv = document.createElement('div');
+  keywordDiv.classList.add('keyword'); // Add a class for styling
+  keywordDiv.textContent = keyword; // Set the keyword text
+  keywordsContainer.appendChild(keywordDiv); // Append keyword div to the container
+});
+
+      } else {
+        gameTitleElement.textContent = 'Game not found!';
+        gameImageElement.src = '';
+        gameDescriptionElement.innerHTML = '<li><h3>No description available for this game.</h3></li>';
+      }
+    }
+
+    // Display the game details when the page loads
+    displayGameDetails(game);
+  </script>
+</body>
+
+</html>

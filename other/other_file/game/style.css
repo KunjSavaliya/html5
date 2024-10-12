@@ -70,7 +70,7 @@
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    font-family: 'Roboto', arial, sans-serif; 
+    font-family: 'Roboto', arial, sans-serif;
     height: 40px;background-color: #4285f4;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -78,13 +78,13 @@
     padding-right: 10px;
 }
 .feedback_row{
-    cursor: pointer; 
+    cursor: pointer;
     /* width: 170px; */
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
     font-family: 'Roboto', arial, sans-serif;
-     height: 40px; 
+     height: 40px;
      background-color: white;
      color: black;
      padding-top: 5px;
@@ -107,7 +107,7 @@
         align-items: top;
 }
 .feedback-ad-response{
-    left: 40%; 
+    left: 40%;
     top:250px;
     margin: 0;
     padding: 0;
@@ -128,7 +128,7 @@ display:flex;flex-direction: row;flex-wrap:wrap;font-family: 'Roboto', arial, sa
     font-size: 15px; display:flex;flex-direction: row;flex-wrap:wrap;font-family: 'Roboto', arial, sans-serif; height: 40px; background-color: white;color: black;padding-top: 5px;padding-bottom: 5px;padding-left: 10px;padding-right: 10px
 }
 #closeAdButton {
-  cursor:pointer;  
+  cursor:pointer;
   width: 10%;text-align: center;color: aliceblue;cursor:pointer; font-size: 25px;align-content: right;
 }
 
@@ -138,7 +138,7 @@ display:flex;flex-direction: row;flex-wrap:wrap;font-family: 'Roboto', arial, sa
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
-  font-family: 'Roboto', arial, sans-serif; 
+  font-family: 'Roboto', arial, sans-serif;
   height: fit-content;
   padding-top:20px ;
   padding-bottom: 20px;
@@ -169,7 +169,7 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
   }
-  
+
   input[type=submit] {
     width: 70%;
     background-color: #4CAF50;
@@ -180,7 +180,7 @@ input[type=text], select {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   input[type=submit]:hover {
     background-color: #45a049;
   }
@@ -234,7 +234,7 @@ header
     align-items: center;
     color: red;
     height: auto;
-    
+
 }
 .blog_description
 {
@@ -248,7 +248,7 @@ header
 .footer_text a{
     color: currentColor;
     text-decoration: none;
-    
+
 }
 .container {
     /* background-color: #0046ab; */
@@ -271,10 +271,10 @@ header
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;  
+    margin: 0;
     display: block;
 }
-.title-decor { 
+.title-decor {
     /* border: 5px solid; */
     /* -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -285,7 +285,7 @@ header
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: center;
 }
 .items
@@ -316,7 +316,7 @@ footer::before {
     object-fit: cover;
     border-radius: 6px;
     margin-left: 10px;
-    margin-right: 10px;   
+    margin-right: 10px;
 }
 .game-link {
     display: block;
@@ -363,7 +363,7 @@ footer::before {
         margin-right: auto;
         align-items: center;
         width: 70%; height: 320px;
-        
+
     }
     .PC_Middle
     {
@@ -386,7 +386,7 @@ footer::before {
     }
     .MB_Topbanner
     {
-         display: none; 
+         display: none;
     }
     .MB_Middle
     {
@@ -413,18 +413,18 @@ footer::before {
     body {
         align-items: center;
         /* padding-top:70px; */
-        
+
     }
     .container {
         margin: 0;
         /* margin-top: 10px; */
-        
+
     }
     .games_decor_title {
         font-size: 12.375rem;
     }
     .title-decor{
-        
+
         /* top: 10px; */
         font-size: 4.125rem;
     }
@@ -463,7 +463,7 @@ footer::before {
     {
         display: none;
     }
-  
+
         body {
         align-items: center;
         /* padding-top: 50px; */
@@ -475,7 +475,7 @@ footer::before {
         width: 160px;
         height: 160px;
     }
- 
+
     .footer_text{
         font-size: 10px;
     }
@@ -483,17 +483,17 @@ footer::before {
         font-size: 10px;
     }
     .games_decor_title {
-        
+
         font-size: 7.375rem;
     }
     .title-decor{
-        
+
         font-size: 3.125rem;
-        
+
     }
-   
+
 }
-/* Custom, iPhone Retina and Small Devices, Phones */ 
+/* Custom, iPhone Retina and Small Devices, Phones */
 @media only screen and (min-width : 320px) and (max-width: 768px) {
     .MB_Topbanner
         {
@@ -537,7 +537,7 @@ footer::before {
     body {
         align-items: center;
         /* padding-top: 35px; */
-        
+
     }
     .footer_text{
         font-size: 8px;
@@ -545,15 +545,15 @@ footer::before {
     .footer_text a{
         font-size: 8px;
     }
-   
+
     .games_decor_title {
-        
+
         font-size: 1.375rem;
     }
-    
+
     .title-decor{
         font-size: 1.125rem;
-        
+
     }
 }
 @media (max-width:320px) {
@@ -597,8 +597,8 @@ footer::before {
     }
     .title-decor{
         font-size: 1.105rem;
-        
-        
+
+
     }
     .footer_text{
         font-size: 5px;
